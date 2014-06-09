@@ -32,10 +32,10 @@ namespace CSDemoWebApp.Test
         public void AddSubTest()
         {
             var obj = new ImportantClass();
-            Assert.AreEqual(obj.GetNum(), 1);
+            Assert.AreEqual(obj.GetNum(), 0);
             obj.SubFromNum(13);
             obj.AddToNum(13);
-            Assert.AreEqual(obj.GetNum(), 5);
+            Assert.AreEqual(obj.GetNum(), 0);
         }
         [TestCase]
         public void ResetTest()
